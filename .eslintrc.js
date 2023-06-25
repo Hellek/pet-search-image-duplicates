@@ -46,6 +46,14 @@ module.exports = {
     'array-bracket-spacing': 'warn',
     'object-curly-newline': 'warn',
     'object-curly-spacing': 'warn',
+    'import/extensions': [ // https://www.npmjs.com/package/eslint-plugin-import
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'padding-line-between-statements': [
       'warn',
       { blankLine: 'always', prev: 'multiline-block-like', next: '*' },
